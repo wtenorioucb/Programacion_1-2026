@@ -1,17 +1,12 @@
-#include <iostream>
+// Materia: Programación I, Paralelo 4
+// Autor: Victor Guillermo Dalence Deheza
+// Carnet: 12420464
+// Carrera del estudiante: Ingenieria Mecatrónica
+// Fecha creación: 15/02/2026
+
+#include<iostream>
 using namespace std;
 int main()
 {
-// Materia: Programación I, Paralelo 4
-// Autor: Milenka Dayana Martinez Lazaro.
-// Carnet: 14184761.
-// Carrera del estudiante: Ing. Biomedica.
-// Fecha creación: 11/02/2026
-system("cls");
-float precio; float iva; float impuesto;
-cout<<"ingrese el precio de su producto: "; cin>>precio;
-iva = 1 + 0.13;
-impuesto = precio * iva;
-cout<<endl<<"precio total con el impuesto aplicado: "<<impuesto;
-    return 0;
+    cout<<"completar depues";
 }

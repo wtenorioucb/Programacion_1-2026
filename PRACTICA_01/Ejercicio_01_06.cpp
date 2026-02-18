@@ -1,20 +1,22 @@
-#include <iostream>
+// Materia: Programación I, Paralelo 4
+// Autor: Victor Guillermo Dalence Deheza
+// Carnet: 12420464
+// Carrera del estudiante: Ingenieria Mecatrónica
+// Fecha creación: 15/02/2026
+
+#include<iostream>
 using namespace std;
 int main()
 {
-// Materia: Programación I, Paralelo 4
-// Autor: Milenka Dayana Martinez Lazaro.
-// Carnet: 14184761.
-// Carrera del estudiante: Ing. Biomedica.
-// Fecha creación: 11/02/2026
-system("cls");
-int a; int residuo;
-cout<<"ingrese el numero a evaluar: "; cin>>a; cout<<endl;
-residuo = a % 2;
-if (residuo==0){
-    cout<<"el numero es par";
-} else{
-    cout<<"el numero no es par";
-}
-    return 0;
+    int numero;
+    cout<<"Ingrese un numero entero: ";
+    cin>>numero;
+    if (numero % 2 ==0)
+    {
+        cout<<endl<<"el numero "<<numero<<" es par";
+    }
+    else{
+        cout<<endl<<"el numero "<<numero<<" es impar";
+    }
+    
 }

@@ -1,19 +1,22 @@
-#include <iostream>
+// Materia: Programación I, Paralelo 4
+// Autor: Victor Guillermo Dalence Deheza
+// Carnet: 12420464
+// Carrera del estudiante: Ingenieria Mecatrónica
+// Fecha creación: 17/02/2026
+
+#include<iostream>
 using namespace std;
 int main()
 {
-// Materia: Programación I, Paralelo 4
-// Autor: Milenka Dayana Martinez Lazaro.
-// Carnet: 14184761.
-// Carrera del estudiante: Ing. Biomedica.
-// Fecha creación: 11/02/2026
-system("cls");
-int edad;
-cout<<"ingrese su edad: "; cin>> edad; cout<<endl;
-if(edad>=18 && edad<=25){
-    cout<<"su edad esta en el rango solicitado de 18-25 anios";
-} else{
-    cout<<"su edad no esta en el rango solicitado de 18-25 anios";
-}
-    return 0;
+    int edad;
+    cout<<"Ingrese su edad: "<<endl;
+    cin>>edad;
+    if (edad>17 and edad<26)
+    {
+        cout<<"La edad introducida esta dentro del rango de 18 a 25";
+    }
+    else{
+        cout<<"La edad introducida esta fuera del rango de 18 a 25";
+    }
+    
 }

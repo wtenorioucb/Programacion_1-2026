@@ -1,23 +1,30 @@
-#include <iostream>
+// Materia: Programación I, Paralelo 4
+// Autor: Victor Guillermo Dalence Deheza
+// Carnet: 12420464
+// Carrera del estudiante: Ingenieria Mecatrónica
+// Fecha creación: 15/02/2026
+
+#include<iostream>
 using namespace std;
 int main()
 {
-// Materia: Programación I, Paralelo 4
-// Autor: Milenka Dayana Martinez Lazaro.
-// Carnet: 14184761.
-// Carrera del estudiante: Ing. Biomedica.
-// Fecha creación: 11/02/2026
-system("cls");
-float a; float b; float suma; float resta; float multiplicacion; float division;
-cout<<"ingrese el primer numero: "; cin>> a;
-cout<<"ingrese el segundo numero: "; cin>> b;
-suma = a + b;
-resta = a - b;
-multiplicacion = a * b;
-division = a / b;
-cout<<"la suma de los numeros es: "<<suma<<endl;
-cout<<"la resta de los numeros es: "<<resta<<endl;
-cout<<"la multiplicacion de los numeros es: "<<multiplicacion<<endl;
-cout<<"la division de los numeros es: "<<division<<endl;
+    int numero_1, numero_2, opsuma=0, opresta=0, opmulti=0;
+    float opdiv=0;
+    cout<<"ingrese el primer numero: "<<endl;
+    cin>>numero_1;
+    cout<<"ahora ingrese el segundo numero: "<<endl;
+    cin>>numero_2;
+    opsuma=numero_1+numero_2;
+    opresta=numero_1-numero_2;
+    opmulti=numero_1*numero_2;
+    opdiv=numero_1/numero_2;
+
+    cout<<"los numeros ingresados fueron "<<numero_1<<" y "<<numero_2<<endl;
+    cout<<"la suma de ambos es: "<<opsuma<<endl;
+    cout<<"la resta de ambos es: "<<opresta<<endl;
+    cout<<"la multiplicacion de ambos es: "<<opmulti<<endl;
+    cout<<"la division de ambos es: "<<opdiv;
+
     return 0;
+
 }

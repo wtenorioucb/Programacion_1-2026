@@ -1,21 +1,42 @@
-#include <iostream>
-#include <cmath>
+// Materia: Programación I, Paralelo 4
+// Autor: Victor Guillermo Dalence Deheza
+// Carnet: 12420464
+// Carrera del estudiante: Ingenieria Mecatrónica
+// Fecha creación: 15/02/2026
+
+#include<iostream>
+#include<cmath>
 using namespace std;
 int main()
 {
-// Materia: Programación I, Paralelo 4
-// Autor: Milenka Dayana Martinez Lazaro.
-// Carnet: 14184761.
-// Carrera del estudiante: Ing. Biomedica.
-// Fecha creación: 11/02/2026
-system("cls");
-float cateto_1; float cateto_2; float potencia_1; float potencia_2; float suma; float hipotenusa;
-cout<<"ingrese el cateto 1: "; cin>>cateto_1; cout<<endl;
-cout<<"ingrese el cateto 2: "; cin>>cateto_2; cout<<endl;
-potencia_1 = cateto_1 * cateto_1;
-potencia_2 = cateto_2 * cateto_2; 
-suma = potencia_1 + potencia_2;
-hipotenusa = sqrt(suma);
-cout<<"la hipotenusa del triangulo es: "<<hipotenusa;
-    return 0;
+    float angulo, opuesto, adyacente, hipotenusa=0;
+    cout<<"ingrese el angulo entre la hipotenusa y el cateto adyacente: ";
+    cin>>angulo;   
+    if (angulo<90)
+    {
+        cout<<endl<<"ingrese el tamano del cateto adyacente: ";
+        cin>> adyacente;
+        if (adyacente>0)
+        {
+            cout<<endl<<"ingrese el tamano del cateto opuesto: ";
+            cin>>opuesto;
+            if (opuesto>0)
+            {
+                hipotenusa=sqrt(pow(adyacente,2)+pow(opuesto,2));
+                cout<<endl<<"el valor de la hipotenusa es: "<<hipotenusa;
+            }
+            else{
+                cout<<endl<<"valor de cateto opuesto invalido";
+            }
+            
+        }
+        else{
+            cout<<endl<<"valor de cateto adyacente invalido";
+        }
+        
+    }
+    else{
+        cout<<endl<<"valor de angulo invalido";
+    }
+    
 }
